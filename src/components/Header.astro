@@ -1,0 +1,86 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+---
+
+<header transition:animate="none">
+  <nav>
+    <img class="logo" src="../logo.svg" />
+    <div class="internal-links">
+      <HeaderLink href="/">Naútica</HeaderLink>
+      <HeaderLink href="/foto">Fotografía</HeaderLink>
+      <HeaderLink href="/dev">Programación</HeaderLink>
+    </div>
+    <div class="social-links">
+      <a href="https://t.me/j0frus" target="_blank">
+        <span class="sr-only">Hablame por Telegram</span>
+        <img class="telegram" src="telegram.svg" />
+      </a>
+      <a href="https://www.linkedin.com/in/jramma/" target="_blank">
+        <span class="sr-only">Agregame en Linkedin</span>
+        <img class="telegram" src="linke.svg" />
+      </a>
+      <a href="https://instagram.com/jramma1" target="_blank">
+        <span class="sr-only">Sigueme en instagram</span>
+        <img class="telegram" src="insta.svg" />
+      </a>
+    </div>
+	<div class="sandwich">
+	<a href="/menu">
+		<img class="san"  src="../icons/nav.svg"/>
+	</a>
+	</a>
+	</div>
+  </nav>
+</header>
+<style>
+  .logo {
+    margin: 30px;
+  }
+  h2 {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  h2 a,
+  h2 a.active {
+    text-decoration: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav a {
+    padding: 1em 0.5em;
+    color: var(--black);
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+  }
+  nav a.active {
+    text-decoration: none;
+    border-bottom-color: var(--accent);
+  }
+  .social-links {
+    margin-right: 30px;
+  }
+  ,
+  .social-links a {
+    display: flex;
+  }
+  .sandwich{
+	display: none;
+  }
+
+  @media (max-width: 720px) {
+    .social-links {
+      display: none;
+    }
+	.internal-links{
+		display: none;
+	}
+	.sandwich{
+		display: inline;
+		margin: 30px;
+	}
+  }
+</style>

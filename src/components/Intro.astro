@@ -1,0 +1,126 @@
+---
+
+---
+
+<div class="box" transition:animate="none">
+  <div class="intro">
+    <h2 class="div">Títulos</h2>
+    <div class="contenedor-flex">
+      <div class="contenedor">
+        <span>
+          <p class="text">
+            <img src="../icons/stcw.svg" />
+            <span class="span">STCW</span>
+            <span class="text-wrapper-2">, seguridad básica<br /></span>
+          </p>
+          <p class="text">
+            <img src="../icons/anc.svg" />
+            <span class="span">PER</span>
+            <span class="text-wrapper-2"
+              >, patrón de embarcación de recreo<br /></span
+            >
+          </p>
+          <p class="text">
+            <img src="../icons/anc.svg" />
+            <span class="span">PY</span>
+            <span class="text-wrapper-2">, patrón de yate<br /></span>
+          </p>
+          <p class="text">
+            <img src="../icons/rad.svg" />
+            <span class="span">ROCA</span>
+            <span class="text-wrapper-2"
+              >, radio operador de corto alcance<br /></span
+            >
+          </p>
+          <p class="text">
+            <img src="../icons/bo.svg" />
+            <span class="text-wrapper-2">Marinero de puerto<br /></span>
+          </p>
+          <p class="text">
+            <img src="../icons/id.svg" />
+            <span class="text-wrapper-2">Libreta de navegación marítima</span>
+          </p>
+        </span>
+      </div>
+      <div class="contenedor">
+        <div class="bio">
+          <p class="text">
+            <span class="span">Edad:</span>
+            <span>26 años<br /></span>
+          </p>
+          <p class="text">
+            <span class="span">Educación:</span>
+            <span >cursando máster<br /></span>
+          </p>
+          <p class="text">
+            <span class="span">Nacionalidad:</span>
+            <span >española<br /></span>
+          </p>
+          <p class="text">
+            <span class="span">Idiomas:</span>
+            <span >italiano, catalán/valenciano e inglés<br /></span
+            >
+          </p>
+          <p class="text">
+            <span class="span">Actualmente en Barcelona <br /></span>
+          </p>
+          <p class="text">
+            <span class="span">Habilidades:</span>
+             uso de sextante, costura de velas,
+          
+          
+             
+              mantenimiento de veleros, reconozco algunas constelaciones,
+              sociable y fotografía.<br />
+            
+          </p>
+          <p class="text">
+            <span class="span">Intereses:</span>
+            <span >PPER y vela.<br /></span>
+          </p>
+          <p class="text"><span class="span"></span></p>
+        </div>
+      </div>
+      <div class="contenedor" transition:animate="none"><img class="hero" src="../img/hero.jpg"  /></div>
+    </div>
+  </div>
+  <button class="btn">
+    <div class="btn-text">VER CV</div>
+  </button>
+</div>
+<style>
+  .contenedor-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box {
+    margin: 30px 30px;
+  }
+  .contenedor {
+    flex: 0 0 calc(30% - 10px);
+    box-sizing: border-box; 
+    color: #263238;
+    margin: 1rem;
+  }
+  .span {
+    font-weight: 700;
+    color: #263238;
+  }
+  p {
+    color: #263238;
+  }
+  .hero {
+    border-radius: 25px;
+    height: 453px;
+    object-fit: cover;
+    max-width: 12rem;
+    max-height: 15rem;
+    transition: transform 0.3s ease;
+  }
+
+  @media (max-width: 767px) {
+    .contenedor {
+      flex: 0 0 100%; /* Cambia a ancho completo cuando la pantalla se estrecha */
+    }
+  }
+</style>

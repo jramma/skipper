@@ -1,0 +1,53 @@
+---
+const today = new Date();
+---
+
+<footer transition:animate="none">
+  <div class="imgen">
+    <div class="logob">
+      <img class="logo" src="/icons/wanc.svg" />
+    </div>
+    &copy; {today.getFullYear()} Jose Ramos Masip. All rights reserved.
+    <div class="social-links">
+      <a href="https://t.me/j0frus" target="_blank">
+        <span class="sr-only">Hablame por Telegram</span>
+		<img class="telegram" src="/icons/wtele.svg" />
+
+      </a>
+      <a href="https://www.linkedin.com/in/jramma/" target="_blank">
+        <span class="sr-only">Agregame en Linkedin</span>
+		<img class="telegram" src="/icons/wlin.svg" />
+      </a>
+      <a href="https://instagram.com/jramma1" target="_blank">
+        <span class="sr-only">Sigueme en instagram</span>
+		<img class="telegram" src="/icons/winsta.svg" />
+      </a>
+    </div>
+  </div>
+</footer>
+<style>
+  footer {
+    width: 100%;
+    text-align: center;
+	color: white;
+  }
+  .imgen {
+    background-image: url("/img/foot.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  .social-links a {
+    text-decoration: none;
+    color: rgb(var(--gray));
+  }
+  .social-links a:hover {
+    color: rgb(var(--gray-dark));
+  }
+</style>

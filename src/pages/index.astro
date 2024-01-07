@@ -1,0 +1,36 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Cabecera from '../components/Cabecera.astro';
+import Footer from '../components/Footer.astro';
+import Intro from '../components/Intro.astro';
+import Fotos from '../components/Fotos.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { ViewTransitions, slide } from "astro:transitions";
+import MenuFotos from "../components/MenuFotos.astro";
+ // Asegúrate de que esta ruta es correcta
+
+---
+
+<!doctype html>
+<html lang="es" transition:animate={slide({ duration: "1s" })}>
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<ViewTransitions />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<Cabecera/>
+			<Intro/>
+			<div id="vista">
+			<slot >
+				<main>
+					<div><img class="imagen" src="/img/photo1.jpg"></div>
+				</main>
+			</slot></div>
+			<MenuFotos/>
+		</main>
+		<Footer />
+	</body>
+</html>
